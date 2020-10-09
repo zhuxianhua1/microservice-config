@@ -1,13 +1,15 @@
 spring:
- profiles:
-  active: dev
+    profiles:
+        active: dev
+        
+--- 
+spring:
+    profiles: dev
+    application:
+        name: microservicecloud-config-dev
+---
 
 spring:
- profiles: dev
- application:
-  name: microservicecloud-config-hua-dev
-
-spring:
- profiles: test
- application:
-  name: microservicecloud-config-hua-test
+    profiles: test
+    application:
+        name: microservicecloud-config-test
